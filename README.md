@@ -1,1 +1,1 @@
-# Research-Paper-Discovery-Agent
+#  AI Research Innovation Mapper
