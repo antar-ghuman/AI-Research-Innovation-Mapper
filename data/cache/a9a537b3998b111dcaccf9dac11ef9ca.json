@@ -1,0 +1,84 @@
+[
+  {
+    "id": "10.1101/663195",
+    "title": "Development of circulating cell-free DNA reduced representation bisulfite sequencing for clinical methylomics diagnostics",
+    "authors": [
+      "De Koker, A.",
+      " Raman, L.",
+      " Van Paemel, R.",
+      " Van der Linden, M.",
+      " Van de Velde, S.",
+      " Van der Leest, P.",
+      " Van Gaever, B.",
+      " Zaka, A.",
+      " Vermaelen, K.",
+      " Demedts, I.",
+      " Surmont, V.",
+      " Himpe, U.",
+      " Dedeurwaerdere, F.",
+      " Ferdinande, L.",
+      " Claes, K.",
+      " De Wilde, J.",
+      " Timens, W.",
+      " De Jager, V.",
+      " Hiltermann, J.",
+      " De Wilde, B.",
+      " Menten, B.",
+      " De Preter, K.",
+      " Schuuring, E.",
+      " Van Dorpe, J.",
+      " Callewaert, N."
+    ],
+    "abstract": "The methylation profile of circulating cell-free DNA (cfDNA) is of great interest as a liquid biopsy for the detection and monitoring of cancer and other pathologies. Here we introduce  circulating cell-free DNA reduced representation bisulfite sequencing (cf-RRBS), enabling the use of highly effective RRBS on highly fragmented plasma cfDNA as well as on FFPE-archived cancer tissues. The method enriches the CpG-rich RRBS target regions by enzymatic degradation of all off-target DNA rather than by targeted capture, in contrast to previous methods. Critical steps are fully enzymatic in a single-tube, making it rapid, cost-effective, robust and easily implemented on a liquid-handling station for high-throughput sample preparation. We benchmark cf-RRBS results to those obtained by previous more complex methods and exemplify its use for accurate non-invasive subtyping of lung cancer, a frequent onco-pathology task. cf-RRBS enables any molecular pathology lab to tap into the cfDNA methylome, only making use of off-the-shelf reagents and open-source data analysis tools.\n\nOne Sentence SummaryNovel methodology enables facile and cost-effective methylation profiling of fragmented plasma DNA, allowing for routine liquid biopsy clinical diagnostics, exemplified here for differential diagnosis of lung cancer subtypes.",
+    "published_date": "2025-07-07",
+    "categories": [
+      "biology"
+    ],
+    "url": "https://www.biorxiv.org/content/10.1101/663195",
+    "source": "biorxiv",
+    "doi": "10.1101/663195",
+    "journal": null,
+    "citations": null
+  },
+  {
+    "id": "10.1101/716290",
+    "title": "Post-learning replay of hippocampal-striatal activity is biased by reward-prediction signals",
+    "authors": [
+      "Roscow, E. L.",
+      " Howe, T.",
+      " Lepora, N. F.",
+      " Jones, M. W."
+    ],
+    "abstract": "Neural activity encoding recent experiences is replayed during sleep and rest to promote consolidation of memories. However, precisely which features of experience influence replay prioritisation to optimise adaptive behaviour remains unclear. Here, we trained adult male rats on a novel maze-based reinforcement learning task designed to dissociate reward outcomes from reward-prediction errors. Four variations of a reinforcement learning model were fitted to the rats' behaviour over multiple days. Behaviour was best predicted by a model incorporating replay biased by reward-prediction error, compared to the same model with no replay, random replay or reward-biased replay. Neural population recordings from the hippocampus and ventral striatum of rats trained in the task evidenced preferential reactivation of reward-prediction and reward-prediction error signals during post-task rest. These insights disentangle the influences of salience on replay, suggesting that reinforcement learning is tuned by post-learning replay biased by reward-prediction error, not by reward per se. This work therefore provides a behavioural and theoretical toolkit with which to measure and interpret the neural mechanisms linking replay and reinforcement learning.",
+    "published_date": "2025-07-11",
+    "categories": [
+      "biology"
+    ],
+    "url": "https://www.biorxiv.org/content/10.1101/716290",
+    "source": "biorxiv",
+    "doi": "10.1101/716290",
+    "journal": null,
+    "citations": null
+  },
+  {
+    "id": "10.1101/724328",
+    "title": "Modular integration of neural connectomics, dynamics and biomechanics for identification of behavioral sensorimotor pathways in Caenorhabditis elegans",
+    "authors": [
+      "Kim, J.",
+      " Florman, J. T.",
+      " Santos, J. A.",
+      " Alkema, M. J.",
+      " Shlizerman, E."
+    ],
+    "abstract": "Computational approaches which emulate in-vivo nervous system are needed to investigate mechanisms of the brain to orchestrate behavior. Such approaches must integrate a series of biophysical models encompassing the nervous system, muscles, biomechanics to allow observing the system in its entirety while supporting incorporations of different model variations. Here we develop modWorm: a modeling framework for the nematode Caenorhabditis elegans using modular integration approach. modWorm allows for construction of a model as an integrated series of configurable, exchangeable modules each describing specific biophysical processes across different modalities (e.g., nervous system, muscles, body). Utilizing modWorm, we propose a base neuro-mechanical model for C. elegans built upon the complete connectome. The model integrates a series of 7 modules: i) intra-cellular dynamics, ii) electrical and iii) chemical extra-cellular neural dynamics, iv) translation of neural activity to muscle calcium dynamics, v) muscle calcium dynamics to muscle forces, vi) muscle forces to body postures and vii) proprioceptive feedback. We validate the base model by in-silico injection of constant currents into sensory and inter-neurons known to be associated with locomotion behaviors and by applying external forces to the body. Applications of in-silico neural stimuli experimentally known to modulate locomotion show that the model can recapitulate natural behavioral responses such as forward and backward locomotion as well as mid-locomotion stimuli induced responses such as avoidance and turns. Furthermore, through in-silico ablation surveys, the model can infer novel neural circuits involved in sensorimotor behaviors. To further dissect mechanisms of locomotion, we utilize modWorm to introduce empirical based variations of intra and extra-cellular dynamics as well as model optimizations on associated parameters to elucidate their effects on simulated locomotion dynamics compared to experimental findings. Our results show that the proposed framework can be utilized to identify neural circuits which control, mediate and generate natural behavior.",
+    "published_date": "2025-06-12",
+    "categories": [
+      "biology"
+    ],
+    "url": "https://www.biorxiv.org/content/10.1101/724328",
+    "source": "biorxiv",
+    "doi": "10.1101/724328",
+    "journal": null,
+    "citations": null
+  }
+]

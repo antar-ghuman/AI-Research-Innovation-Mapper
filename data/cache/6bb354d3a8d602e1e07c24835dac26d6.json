@@ -1,0 +1,59 @@
+[
+  {
+    "id": "36103745",
+    "title": "Breast cancer detection using deep learning: Datasets, methods, and challenges ahead.",
+    "authors": [
+      "Nusrat Mohi Ud Din",
+      "Rayees Ahmad Dar",
+      "Muzafar Rasool",
+      "Assif Assad"
+    ],
+    "abstract": "Breast Cancer (BC) is the most commonly diagnosed cancer and second leading cause of mortality among women. About 1 in 8 US women (about 13%) will develop invasive BC throughout their lifetime. Early detection of this life-threatening disease not only increases the survival rate but also reduces the treatment cost. Fortunately, advancements in radiographic imaging like \"Mammograms\", \"Computed Tomography (CT)\", \"Magnetic Resonance Imaging (MRI)\", \"3D Mammography\", and \"Histopathological Imaging (HI)\" have made it feasible to diagnose this life-taking disease at an early stage. However, the analysis of radiographic images and Histopathological images is done by experienced radiologists and pathologists, respectively. The process is not only costly but also error-prone. Over the last ten years, Computer Vision and Machine Learning (ML) have transformed the world in every way possible. Deep learning (DL), a subfield of ML has shown outstanding results in a variety of fields, particularly in the biomedical industry, because of its ability to handle large amounts of data. DL techniques automatically extract the features by analyzing the high dimensional and correlated data efficiently. The potential and ability of DL models have also been utilized and evaluated in the identification and prognosis of BC, utilizing radiographic and Histopathological images, and have performed admirably. However, AI has shown good claims in retrospective studies only. External validations are needed for translating these cutting-edge AI tools as a clinical decision maker. The main aim of this research work is to present the critical analysis of the research and findings already done to detect and classify BC using various imaging modalities including \"Mammography\", \"Histopathology\", \"Ultrasound\", \"PET/CT\", \"MRI\", and \"Thermography\". At first, a detailed review of the past research papers using Machine Learning, Deep Learning and Deep Reinforcement Learning for BC classification and detection is carried out. We also review the publicly available datasets for the above-mentioned imaging modalities to make future research more accessible. Finally, a critical discussion section has been included to elaborate open research difficulties and prospects for future study in this emerging area, demonstrating the limitations of Deep Learning approaches.",
+    "published_date": "2022",
+    "categories": [
+      "medical"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36103745/",
+    "source": "pubmed",
+    "doi": null,
+    "journal": "Computers in biology and medicine",
+    "citations": null
+  },
+  {
+    "id": "35339259",
+    "title": "Application of Deep Learning in Breast Cancer Imaging.",
+    "authors": [
+      "Luuk Balkenende",
+      "Jonas Teuwen",
+      "Ritse M Mann"
+    ],
+    "abstract": "This review gives an overview of the current state of deep learning research in breast cancer imaging. Breast imaging plays a major role in detecting breast cancer at an earlier stage, as well as monitoring and evaluating breast cancer during treatment. The most commonly used modalities for breast imaging are digital mammography, digital breast tomosynthesis, ultrasound and magnetic resonance imaging. Nuclear medicine imaging techniques are used for detection and classification of axillary lymph nodes and distant staging in breast cancer imaging. All of these techniques are currently digitized, enabling the possibility to implement deep learning (DL), a subset of Artificial intelligence, in breast imaging. DL is nowadays embedded in a plethora of different tasks, such as lesion classification and segmentation, image reconstruction and generation, cancer risk prediction, and prediction and assessment of therapy response. Studies show similar and even better performances of DL algorithms compared to radiologists, although it is clear that large trials are needed, especially for ultrasound and magnetic resonance imaging, to exactly determine the added value of DL in breast cancer imaging. Studies on DL in nuclear medicine techniques are only sparsely available and further research is mandatory. Legal and ethical issues need to be considered before the role of DL can expand to its full potential in clinical breast care practice.",
+    "published_date": "2022",
+    "categories": [
+      "medical"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35339259/",
+    "source": "pubmed",
+    "doi": null,
+    "journal": "Seminars in nuclear medicine",
+    "citations": null
+  },
+  {
+    "id": "39413940",
+    "title": "Early cancer detection using deep learning and medical imaging: A survey.",
+    "authors": [
+      "Istiak Ahmad",
+      "Fahad Alqurashi"
+    ],
+    "abstract": "Cancer, characterized by the uncontrolled division of abnormal cells that harm body tissues, necessitates early detection for effective treatment. Medical imaging is crucial for identifying various cancers, yet its manual interpretation by radiologists is often subjective, labour-intensive, and time-consuming. Consequently, there is a critical need for an automated decision-making process to enhance cancer detection and diagnosis. Previously, a lot of work was done on surveys of different cancer detection methods, and most of them were focused on specific cancers and limited techniques. This study presents a comprehensive survey of cancer detection methods. It entails a review of 99 research articles collected from the Web of Science, IEEE, and Scopus databases, published between 2020 and 2024. The scope of the study encompasses 12 types of cancer, including breast, cervical, ovarian, prostate, esophageal, liver, pancreatic, colon, lung, oral, brain, and skin cancers. This study discusses different cancer detection techniques, including medical imaging data, image preprocessing, segmentation, feature extraction, deep learning and transfer learning methods, and evaluation metrics. Eventually, we summarised the datasets and techniques with research challenges and limitations. Finally, we provide future directions for enhancing cancer detection techniques.",
+    "published_date": "2024",
+    "categories": [
+      "medical"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39413940/",
+    "source": "pubmed",
+    "doi": null,
+    "journal": "Critical reviews in oncology/hematology",
+    "citations": null
+  }
+]

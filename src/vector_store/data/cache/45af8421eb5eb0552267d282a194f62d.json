@@ -1,0 +1,22 @@
+[
+  {
+    "id": "37947090",
+    "title": "Coevolution-Driven Method for Efficiently Simulating Conformational Changes in Proteins Reveals Molecular Details of Ligand Effects in the β2AR Receptor.",
+    "authors": [
+      "Darko Mitrovic",
+      "Yue Chen",
+      "Antoni Marciniak",
+      "Lucie Delemotte"
+    ],
+    "abstract": "With the advent of AI-powered structure prediction, the scientific community is inching closer to solving protein folding. An unresolved enigma, however, is to accurately, reliably, and deterministically predict alternative conformational states that are crucial for the function of, e.g., transporters, receptors, or ion channels where conformational cycling is innately coupled to protein function. Accurately discovering and exploring all conformational states of membrane proteins has been challenging due to the need to retain atomistic detail while enhancing the sampling along interesting degrees of freedom. The challenges include but are not limited to finding which degrees of freedom are relevant, how to accelerate the sampling along them, and then quantifying the populations of each micro- and macrostate. In this work, we present a methodology that finds relevant degrees of freedom by combining evolution and physics through machine learning and apply it to the conformational sampling of the β2 adrenergic receptor. In addition to predicting new conformations that are beyond the training set, we have computed free energy surfaces associated with the protein's conformational landscape. We then show that the methodology is able to quantitatively predict the effect of an array of ligands on the β2 adrenergic receptor activation through the discovery of new metastable states not present in the training set. Lastly, we also stake out the structural determinants of activation and inactivation pathway signaling through different ligands and compare them to functional experiments to validate our methodology and potentially gain further insights into the activation mechanism of the β2 adrenergic receptor.",
+    "published_date": "2023",
+    "categories": [
+      "medical"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37947090/",
+    "source": "pubmed",
+    "doi": null,
+    "journal": "The journal of physical chemistry. B",
+    "citations": null
+  }
+]

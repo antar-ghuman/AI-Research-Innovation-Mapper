@@ -1,0 +1,46 @@
+[
+  {
+    "id": "10.1101/724328",
+    "title": "Modular integration of neural connectomics, dynamics and biomechanics for identification of behavioral sensorimotor pathways in Caenorhabditis elegans",
+    "authors": [
+      "Kim, J.",
+      " Florman, J. T.",
+      " Santos, J. A.",
+      " Alkema, M. J.",
+      " Shlizerman, E."
+    ],
+    "abstract": "Computational approaches which emulate in-vivo nervous system are needed to investigate mechanisms of the brain to orchestrate behavior. Such approaches must integrate a series of biophysical models encompassing the nervous system, muscles, biomechanics to allow observing the system in its entirety while supporting incorporations of different model variations. Here we develop modWorm: a modeling framework for the nematode Caenorhabditis elegans using modular integration approach. modWorm allows for construction of a model as an integrated series of configurable, exchangeable modules each describing specific biophysical processes across different modalities (e.g., nervous system, muscles, body). Utilizing modWorm, we propose a base neuro-mechanical model for C. elegans built upon the complete connectome. The model integrates a series of 7 modules: i) intra-cellular dynamics, ii) electrical and iii) chemical extra-cellular neural dynamics, iv) translation of neural activity to muscle calcium dynamics, v) muscle calcium dynamics to muscle forces, vi) muscle forces to body postures and vii) proprioceptive feedback. We validate the base model by in-silico injection of constant currents into sensory and inter-neurons known to be associated with locomotion behaviors and by applying external forces to the body. Applications of in-silico neural stimuli experimentally known to modulate locomotion show that the model can recapitulate natural behavioral responses such as forward and backward locomotion as well as mid-locomotion stimuli induced responses such as avoidance and turns. Furthermore, through in-silico ablation surveys, the model can infer novel neural circuits involved in sensorimotor behaviors. To further dissect mechanisms of locomotion, we utilize modWorm to introduce empirical based variations of intra and extra-cellular dynamics as well as model optimizations on associated parameters to elucidate their effects on simulated locomotion dynamics compared to experimental findings. Our results show that the proposed framework can be utilized to identify neural circuits which control, mediate and generate natural behavior.",
+    "published_date": "2025-06-12",
+    "categories": [
+      "biology"
+    ],
+    "url": "https://www.biorxiv.org/content/10.1101/724328",
+    "source": "biorxiv",
+    "doi": "10.1101/724328",
+    "journal": null,
+    "citations": null
+  },
+  {
+    "id": "10.1101/2020.10.09.333831",
+    "title": "The transcription factor CLAMP is required for neurogenesis in Drosophila melanogaster.",
+    "authors": [
+      "Tsiarli, M. A.",
+      " Kentro, J. A.",
+      " Conard, A. M.",
+      " Xu, L.",
+      " Nguyen, E.",
+      " O'Connor-Giles, K. M.",
+      " Larschan, E. N."
+    ],
+    "abstract": "AbstractNeural stem cell (NSC) differentiation is controlled by cell-intrinsic and external signals from the stem cell niche including niche surface glia (SG). However, the mechanisms by which transcription factors drive NSC differentiation within the niche remain largely unknown. Here, we show that the Drosophila melanogaster transcription factor, Chromatin-linked adaptor for MSL proteins (CLAMP) is required for regulation of stemness and proliferation of NSCs, especially of the optic lobe (OL). CLAMP promotes transcription of genes involved in stemness, proliferation, and glial development and represses transcription of genes involved in neurogenesis and niche survival. Consistent with transcriptional changes, CLAMP promotes NSC proliferation and niche SG production, while lack of CLAMP severely and specifically impacts OL development. To identify potential mechanisms by which CLAMP may regulate brain development, we examined CLAMP motifs and available CLAMP ChIP-seq data to determine which genes may be direct versus indirect targets. CLAMP motifs are present at many target genes including the glial-determining gene, glial cells missing, while Tailless, the master regulator of OL-development is directly bound by CLAMP. In accordance to these results, in larval OL NSCs lacking CLAMP, Tailless levels are decreased dramatically, suggesting that CLAMP controls OL neurogenesis via Tailless. Overall, our results suggest that CLAMP regulates a transcriptional program which drives NSC proliferation and differentiation via cell-intrinsic and niche-dependent mechanisms that involve transcriptional regulation of Tailless and niche glia.",
+    "published_date": "2025-07-07",
+    "categories": [
+      "biology"
+    ],
+    "url": "https://www.biorxiv.org/content/10.1101/2020.10.09.333831",
+    "source": "biorxiv",
+    "doi": "10.1101/2020.10.09.333831",
+    "journal": null,
+    "citations": null
+  }
+]

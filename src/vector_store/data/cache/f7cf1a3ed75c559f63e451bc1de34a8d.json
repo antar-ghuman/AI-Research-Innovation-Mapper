@@ -1,0 +1,61 @@
+[
+  {
+    "id": "35756423",
+    "title": "Deep Learning-Based Image Reconstruction for Different Medical Imaging Modalities.",
+    "authors": [
+      "Muhammad Yaqub",
+      "Feng Jinchao",
+      "Kaleem Arshid",
+      "Shahzad Ahmed",
+      "Wenqian Zhang",
+      "Muhammad Zubair Nawaz",
+      "Tariq Mahmood"
+    ],
+    "abstract": "Image reconstruction in magnetic resonance imaging (MRI) and computed tomography (CT) is a mathematical process that generates images at many different angles around the patient. Image reconstruction has a fundamental impact on image quality. In recent years, the literature has focused on deep learning and its applications in medical imaging, particularly image reconstruction. Due to the performance of deep learning models in a wide variety of vision applications, a considerable amount of work has recently been carried out using image reconstruction in medical images. MRI and CT appear as the ultimate scientifically appropriate imaging mode for identifying and diagnosing different diseases in this ascension age of technology. This study demonstrates a number of deep learning image reconstruction approaches and a comprehensive review of the most widely used different databases. We also give the challenges and promising future directions for medical image reconstruction.",
+    "published_date": "2022",
+    "categories": [
+      "medical"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35756423/",
+    "source": "pubmed",
+    "doi": null,
+    "journal": "Computational and mathematical methods in medicine",
+    "citations": null
+  },
+  {
+    "id": "31857130",
+    "title": "Artificial intelligence in medical imaging.",
+    "authors": [
+      "John C Gore"
+    ],
+    "abstract": "The medical specialty radiology has experienced a number of extremely important and influential technical developments in the past that have affected how medical imaging is deployed. Artificial intelligence (AI) is potentially another such development that will introduce fundamental changes into the practice of radiology. In this commentary the historical evolution of some major changes in radiology are traced as background to how AI may also be embraced into practice. Potential new capabilities provided by AI offer exciting prospects for more efficient and effective use of medical images.",
+    "published_date": "2020",
+    "categories": [
+      "medical"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31857130/",
+    "source": "pubmed",
+    "doi": null,
+    "journal": "Magnetic resonance imaging",
+    "citations": null
+  },
+  {
+    "id": "35339259",
+    "title": "Application of Deep Learning in Breast Cancer Imaging.",
+    "authors": [
+      "Luuk Balkenende",
+      "Jonas Teuwen",
+      "Ritse M Mann"
+    ],
+    "abstract": "This review gives an overview of the current state of deep learning research in breast cancer imaging. Breast imaging plays a major role in detecting breast cancer at an earlier stage, as well as monitoring and evaluating breast cancer during treatment. The most commonly used modalities for breast imaging are digital mammography, digital breast tomosynthesis, ultrasound and magnetic resonance imaging. Nuclear medicine imaging techniques are used for detection and classification of axillary lymph nodes and distant staging in breast cancer imaging. All of these techniques are currently digitized, enabling the possibility to implement deep learning (DL), a subset of Artificial intelligence, in breast imaging. DL is nowadays embedded in a plethora of different tasks, such as lesion classification and segmentation, image reconstruction and generation, cancer risk prediction, and prediction and assessment of therapy response. Studies show similar and even better performances of DL algorithms compared to radiologists, although it is clear that large trials are needed, especially for ultrasound and magnetic resonance imaging, to exactly determine the added value of DL in breast cancer imaging. Studies on DL in nuclear medicine techniques are only sparsely available and further research is mandatory. Legal and ethical issues need to be considered before the role of DL can expand to its full potential in clinical breast care practice.",
+    "published_date": "2022",
+    "categories": [
+      "medical"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35339259/",
+    "source": "pubmed",
+    "doi": null,
+    "journal": "Seminars in nuclear medicine",
+    "citations": null
+  }
+]

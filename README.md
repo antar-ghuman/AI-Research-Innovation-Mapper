@@ -57,3 +57,13 @@ ai-research-innovation-mapper/
     ├── architecture.md              # System architecture
     ├── api_docs.md                 # API documentation
     └── demo_examples.md            # Demo scenarios
+
+
+
+Day 1 Focus: Foundation
+python# First, let's build these core files:
+src/data/api_clients.py       # ArXiv API integration
+src/vector_store/chroma_client.py  # Local vector database
+src/agents/paper_discovery_agent.py  # First agent
+src/utils/config.py          # Configuration
+streamlit_app.py             # Basic interface
