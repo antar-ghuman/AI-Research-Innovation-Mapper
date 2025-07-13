@@ -3,6 +3,105 @@ AI Research Innovation Mapper - Streamlit Web Application
 Interactive interface for discovering cross-domain research innovations
 """
 
+# Add this debug code to the TOP of your streamlit_app.py file
+# This will help identify exactly where the startup is failing
+
+import sys
+import traceback
+
+print("🚀 Starting Streamlit app...")
+print(f"Python version: {sys.version}")
+
+try:
+    print("📦 Importing basic modules...")
+    import streamlit as st
+    import os
+    print("✅ Streamlit imported successfully")
+    
+    print("📁 Checking file structure...")
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    print(f"Current directory: {current_dir}")
+    print(f"Files in current dir: {os.listdir(current_dir)}")
+    
+    if os.path.exists('src'):
+        print(f"Files in src/: {os.listdir('src')}")
+        if os.path.exists('src/agents'):
+            print(f"Files in src/agents/: {os.listdir('src/agents')}")
+    
+    print("🔧 Adding src to path...")
+    src_dir = os.path.join(current_dir, 'src')
+    if src_dir not in sys.path:
+        sys.path.insert(0, src_dir)
+    print(f"Python path: {sys.path[:3]}")  # Show first 3 entries
+    
+    print("📦 Importing utils...")
+    try:
+        from utils.config import get_config, validate_system, get_api_keys_status
+        print("✅ utils.config imported")
+    except Exception as e:
+        print(f"❌ utils.config failed: {e}")
+        traceback.print_exc()
+    
+    try:
+        from utils.logging_config import init_logging, get_component_logger
+        print("✅ utils.logging_config imported")
+    except Exception as e:
+        print(f"❌ utils.logging_config failed: {e}")
+        traceback.print_exc()
+    
+    try:
+        from utils.demo_data import get_demo_data
+        print("✅ utils.demo_data imported")
+    except Exception as e:
+        print(f"❌ utils.demo_data failed: {e}")
+        traceback.print_exc()
+    
+    print("🤖 Importing agents...")
+    try:
+        from agents.orchestrator import ResearchOrchestrator, OrchestrationConfig
+        print("✅ orchestrator imported")
+    except Exception as e:
+        print(f"❌ orchestrator failed: {e}")
+        traceback.print_exc()
+    
+    try:
+        from agents.paper_discovery_agent import PaperDiscoveryAgent
+        print("✅ paper_discovery_agent imported")
+    except Exception as e:
+        print(f"❌ paper_discovery_agent failed: {e}")
+        traceback.print_exc()
+    
+    try:
+        from agents.cross_domain_agent import CrossDomainAgent
+        print("✅ cross_domain_agent imported")
+    except Exception as e:
+        print(f"❌ cross_domain_agent failed: {e}")
+        traceback.print_exc()
+    
+    print("📊 Importing visualization libraries...")
+    try:
+        import plotly.express as px
+        import plotly.graph_objects as go
+        import pandas as pd
+        import networkx as nx
+        import numpy as np
+        print("✅ All visualization libraries imported")
+    except Exception as e:
+        print(f"❌ Visualization libraries failed: {e}")
+        traceback.print_exc()
+    
+    print("🎉 All imports successful! Starting main app...")
+    
+except Exception as e:
+    print(f"💥 CRITICAL ERROR during startup: {e}")
+    traceback.print_exc()
+    st.error(f"Startup failed: {e}")
+    st.stop()
+
+# Your existing streamlit app code continues here...
+
+
+
 import streamlit as st
 import sys
 import os
