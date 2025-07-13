@@ -20,7 +20,7 @@ requests>=2.31.0
 
 # Academic APIs (free)
 arxiv>=1.4.8
-Bio
+biopython>=1.81  # Fixed: was just "Bio"
 
 # Visualization
 plotly>=5.17.0
@@ -29,3 +29,9 @@ networkx>=3.2.1
 # Utilities
 python-dotenv>=1.0.0
 pydantic>=2.5.0
+
+# Additional utilities (that your code might use)
+dataclasses-json>=0.6.0  # For dataclass serialization
+typing-extensions>=4.8.0  # For better type hints
+urllib3>=2.0.0  # For HTTP requests (often needed)
+certifi>=2023.0.0  # For SSL certificates
