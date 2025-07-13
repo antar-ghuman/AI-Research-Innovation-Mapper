@@ -3,6 +3,21 @@ ChromaDB Vector Store Client for Research Paper Embeddings
 Handles paper storage, cross-domain similarity search, and technique extraction
 """
 
+import sys
+
+# Fix for Streamlit Cloud SQLite issue
+try:
+    import pysqlite3
+    sys.modules['sqlite3'] = pysqlite3
+except ImportError:
+    pass
+
+# Now import ChromaDB
+import chromadb
+from chromadb.config import Settings
+import numpy as np
+from typing import List, Dict, Optional, Any, Tuple
+
 import chromadb
 from chromadb.config import Settings
 import numpy as np
