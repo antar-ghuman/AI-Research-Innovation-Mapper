@@ -6,6 +6,7 @@ langchain-community>=0.0.10
 groq>=0.4.1
 
 # Vector database (free)
+pysqlite3-binary>=0.5.2  # This provides SQLite 3.42+
 chromadb>=0.4.15
 
 # Embeddings (free)

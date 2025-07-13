@@ -4,19 +4,37 @@ Handles paper storage, cross-domain similarity search, and technique extraction
 """
 
 import sys
+import os
 
-# Fix for Streamlit Cloud SQLite issue
+# CRITICAL: Fix SQLite version before any other imports
+def fix_sqlite():
+    """Fix SQLite version for Streamlit Cloud"""
+    try:
+        # Import pysqlite3 and replace sqlite3 in sys.modules
+        import pysqlite3
+        sys.modules['sqlite3'] = pysqlite3
+        print(f"✅ SQLite version fixed: {pysqlite3.sqlite_version}")
+    except ImportError:
+        print("⚠️ pysqlite3 not available, using system sqlite3")
+        import sqlite3
+        print(f"ℹ️ System SQLite version: {sqlite3.sqlite_version}")
+
+# Call the fix BEFORE importing chromadb
+fix_sqlite()
+
+# Now safely import ChromaDB
 try:
-    import pysqlite3
-    sys.modules['sqlite3'] = pysqlite3
-except ImportError:
-    pass
+    import chromadb
+    from chromadb.config import Settings
+    print("✅ ChromaDB imported successfully")
+except Exception as e:
+    print(f"❌ ChromaDB import failed: {e}")
+    raise
 
-# Now import ChromaDB
-import chromadb
-from chromadb.config import Settings
 import numpy as np
 from typing import List, Dict, Optional, Any, Tuple
+import logging
+from dataclasses import dataclass
 
 import chromadb
 from chromadb.config import Settings
