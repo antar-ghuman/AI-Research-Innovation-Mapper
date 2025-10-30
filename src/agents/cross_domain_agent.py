@@ -16,7 +16,8 @@ import time
 import random
 
 # LangChain imports
-from langchain.tools import BaseTool
+# from langchain.tools import BaseTool
+from langchain_core.tools import BaseTool
 from pydantic import BaseModel, Field
 
 # Import our components
