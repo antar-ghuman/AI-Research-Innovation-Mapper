@@ -77,45 +77,34 @@ class TechniqueExtraction:
     confidence_score: float
     context: str  # Surrounding text where technique was found
     
-def __init__(self, model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
-    """
-    Initialize embedding generator with free model
-    
-    Args:
-        model_name: HuggingFace model name (free models)
-    """
-    self.model_name = model_name
-    logger.info(f"Loading embedding model: {model_name}")
-    
-    # Set environment variable to avoid meta tensor issues
-    import os
-    os.environ['TRANSFORMERS_OFFLINE'] = '0'
-    
-    # Load model with explicit device mapping
-    self.model = SentenceTransformer(
-        model_name,
-        device='cpu',
-        cache_folder=None  # Use default cache
-    )
-    
-    self.embedding_dim = self.model.get_sentence_embedding_dimension()
-    logger.info(f"Embedding dimension: {self.embedding_dim}")
 
 class EmbeddingGenerator:
-    """Generates embeddings using free sentence transformers"""
+    """Generates embeddings using ChromaDB's default embedding function"""
     
-    def __init__(self, model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
+    def __init__(self, model_name: str = "all-MiniLM-L6-v2"):
         """
-        Initialize embedding generator with free model
+        Initialize embedding generator with ChromaDB's wrapper
         
         Args:
-            model_name: HuggingFace model name (free models)
+            model_name: HuggingFace model name (without 'sentence-transformers/' prefix)
         """
         self.model_name = model_name
         logger.info(f"Loading embedding model: {model_name}")
-        self.model = SentenceTransformer(model_name)
-        self.embedding_dim = self.model.get_sentence_embedding_dimension()
-        logger.info(f"Embedding dimension: {self.embedding_dim}")
+        
+        try:
+            from chromadb.utils import embedding_functions
+            
+            # Use ChromaDB's sentence transformer wrapper - handles device issues
+            self.model = embedding_functions.SentenceTransformerEmbeddingFunction(
+                model_name=model_name
+            )
+            # ChromaDB's wrapper returns 384-dim embeddings for all-MiniLM-L6-v2
+            self.embedding_dim = 384
+            logger.info(f"✅ Embedding model loaded successfully via ChromaDB")
+            logger.info(f"Embedding dimension: {self.embedding_dim}")
+        except Exception as e:
+            logger.error(f"Failed to load embedding model: {e}")
+            raise
     
     def generate_paper_embedding(self, paper: ResearchPaper) -> np.ndarray:
         """Generate embedding for research paper"""
@@ -127,8 +116,9 @@ class EmbeddingGenerator:
             text = paper.title
         
         try:
-            embedding = self.model.encode(text, convert_to_numpy=True)
-            return embedding
+            # ChromaDB's embedding function returns a list
+            embedding = self.model([text])[0]
+            return np.array(embedding)
         except Exception as e:
             logger.error(f"Error generating embedding for paper {paper.id}: {e}")
             # Return zero vector as fallback
@@ -137,7 +127,8 @@ class EmbeddingGenerator:
     def generate_text_embedding(self, text: str) -> np.ndarray:
         """Generate embedding for arbitrary text"""
         try:
-            return self.model.encode(text, convert_to_numpy=True)
+            embedding = self.model([text])[0]
+            return np.array(embedding)
         except Exception as e:
             logger.error(f"Error generating embedding for text: {e}")
             return np.zeros(self.embedding_dim)
