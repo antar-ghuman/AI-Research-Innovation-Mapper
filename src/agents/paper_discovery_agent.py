@@ -16,7 +16,8 @@ import random
 
 # LangChain imports
 from langchain.tools import BaseTool
-from langchain.prompts import PromptTemplate
+# from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain.schema import AgentAction, AgentFinish
 from pydantic import BaseModel, Field
 
