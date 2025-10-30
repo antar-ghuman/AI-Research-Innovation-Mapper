@@ -14,7 +14,7 @@ import re
 from collections import Counter, defaultdict
 import time
 import random
-
+from __future__ import annotations
 # LangChain imports
 # from langchain.tools import BaseTool
 from langchain_core.tools import BaseTool
