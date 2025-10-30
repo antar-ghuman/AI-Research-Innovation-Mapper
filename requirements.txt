@@ -1,27 +1,32 @@
 streamlit>=1.28.0
 langchain>=0.1.0
-langchain-core>=0.1.0
+
 langchain-community>=0.0.10
-langchain-groq>=0.0.1
+
 # Free LLM
 groq>=0.4.1
+
 # Vector database (free)
-pysqlite3-binary>=0.5.2
+pysqlite3-binary>=0.5.2  # This provides SQLite 3.42+
 chromadb>=0.4.15
-# Embeddings - pin to known working versions
-sentence-transformers==2.2.2
-torch==2.0.1
-transformers==4.30.2
+
+# Embeddings (free)
+sentence-transformers>=2.2.2
+transformers>=4.35.0
+
 # Data processing
 pandas>=2.0.0
 numpy>=1.24.0
 requests>=2.31.0
+
 # Academic APIs (free)
 arxiv>=1.4.8
 Bio
+
 # Visualization
 plotly>=5.17.0
 networkx>=3.2.1
+
 # Utilities
 python-dotenv>=1.0.0
 pydantic>=2.5.0
