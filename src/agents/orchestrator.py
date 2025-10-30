@@ -1,8 +1,9 @@
+from __future__ import annotations 
 """
 Research Orchestrator - Coordinates all AI agents for comprehensive research analysis
 Provides unified interface for Paper Discovery, Cross-Domain, and Innovation agents
 """
-from __future__ import annotations 
+
 import os
 import sys
 from typing import List, Dict, Optional, Any, Tuple
