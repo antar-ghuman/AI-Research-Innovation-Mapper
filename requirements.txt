@@ -6,11 +6,12 @@ langchain-groq>=0.0.1
 # Free LLM
 groq>=0.4.1
 # Vector database (free)
-pysqlite3-binary>=0.5.2  # This provides SQLite 3.42+
+pysqlite3-binary>=0.5.2
 chromadb>=0.4.15
-# Embeddings (free)
-sentence-transformers>=2.2.2
-transformers>=4.35.0
+# Embeddings - pin to known working versions
+sentence-transformers==2.2.2
+torch==2.0.1
+transformers==4.30.2
 # Data processing
 pandas>=2.0.0
 numpy>=1.24.0
