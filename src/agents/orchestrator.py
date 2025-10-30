@@ -18,22 +18,67 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 src_dir = os.path.dirname(current_dir)
 sys.path.insert(0, src_dir)
 
+# try:
+#     from data.api_clients import AcademicAPIManager, ResearchPaper
+#     from vector_store.chroma_client import ChromaVectorStore
+#     from agents.paper_discovery_agent import (
+#         PaperDiscoveryAgent, 
+#         PaperDiscoveryResult, 
+#         GroqLLMWrapper
+#     )
+#     from agents.cross_domain_agent import (
+#         CrossDomainAgent, 
+#         CrossDomainResult
+#     )
+#     # Import innovation agent components separately to avoid circular imports
+# except ImportError as e:
+#     print(f"Import error: {e}")
+#     print("Make sure to run from the correct directory and install dependencies")
 try:
     from data.api_clients import AcademicAPIManager, ResearchPaper
     from vector_store.chroma_client import ChromaVectorStore
+    print("✅ Successfully imported data and vector_store modules")
+except ImportError as e:
+    print(f"❌ Import error for data/vector_store: {e}")
+    raise
+
+# Import agents with detailed error reporting
+try:
     from agents.paper_discovery_agent import (
         PaperDiscoveryAgent, 
         PaperDiscoveryResult, 
         GroqLLMWrapper
     )
+    print("✅ Successfully imported paper_discovery_agent")
+except ImportError as e:
+    print(f"❌ Import error for paper_discovery_agent: {e}")
+    import traceback
+    traceback.print_exc()
+    # Define a placeholder so the module can at least load
+    class GroqLLMWrapper:
+        def __init__(self, api_key: str, model: str = "llama-3.3-70b-versatile"):
+            raise RuntimeError("GroqLLMWrapper not available - paper_discovery_agent failed to import")
+    class PaperDiscoveryAgent:
+        def __init__(self, *args, **kwargs):
+            raise RuntimeError("PaperDiscoveryAgent not available")
+    class PaperDiscoveryResult:
+        pass
+
+try:
     from agents.cross_domain_agent import (
         CrossDomainAgent, 
         CrossDomainResult
     )
-    # Import innovation agent components separately to avoid circular imports
+    print("✅ Successfully imported cross_domain_agent")
 except ImportError as e:
-    print(f"Import error: {e}")
-    print("Make sure to run from the correct directory and install dependencies")
+    print(f"❌ Import error for cross_domain_agent: {e}")
+    import traceback
+    traceback.print_exc()
+    class CrossDomainAgent:
+        def __init__(self, *args, **kwargs):
+            raise RuntimeError("CrossDomainAgent not available")
+    class CrossDomainResult:
+        pass
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
