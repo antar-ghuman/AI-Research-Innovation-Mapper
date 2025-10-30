@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Paper Discovery Agent - Specialized AI agent for finding relevant research papers
 Uses LangChain framework with free LLM (Groq) and vector search capabilities
@@ -13,7 +14,6 @@ import json
 import time
 import hashlib
 import random
-from __future__ import annotations
 
 # LangChain imports
 from langchain.tools import BaseTool
