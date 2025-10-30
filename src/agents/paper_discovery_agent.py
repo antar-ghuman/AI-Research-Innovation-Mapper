@@ -13,6 +13,7 @@ import json
 import time
 import hashlib
 import random
+from __future__ import annotations
 
 # LangChain imports
 from langchain.tools import BaseTool
