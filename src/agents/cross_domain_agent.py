@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Cross-Domain Connection Agent - Finds transferable techniques across research domains
 Discovers hidden connections between different fields and suggests technique transfers
@@ -14,7 +15,7 @@ import re
 from collections import Counter, defaultdict
 import time
 import random
-from __future__ import annotations
+
 # LangChain imports
 # from langchain.tools import BaseTool
 from langchain_core.tools import BaseTool
