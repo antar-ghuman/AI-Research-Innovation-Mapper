@@ -76,6 +76,30 @@ class TechniqueExtraction:
     paper_id: str
     confidence_score: float
     context: str  # Surrounding text where technique was found
+    
+def __init__(self, model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
+    """
+    Initialize embedding generator with free model
+    
+    Args:
+        model_name: HuggingFace model name (free models)
+    """
+    self.model_name = model_name
+    logger.info(f"Loading embedding model: {model_name}")
+    
+    # Set environment variable to avoid meta tensor issues
+    import os
+    os.environ['TRANSFORMERS_OFFLINE'] = '0'
+    
+    # Load model with explicit device mapping
+    self.model = SentenceTransformer(
+        model_name,
+        device='cpu',
+        cache_folder=None  # Use default cache
+    )
+    
+    self.embedding_dim = self.model.get_sentence_embedding_dimension()
+    logger.info(f"Embedding dimension: {self.embedding_dim}")
 
 class EmbeddingGenerator:
     """Generates embeddings using free sentence transformers"""
