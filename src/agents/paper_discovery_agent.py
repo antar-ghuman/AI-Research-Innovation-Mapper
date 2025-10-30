@@ -20,7 +20,7 @@ from langchain.tools import BaseTool
 # from langchain.prompts import PromptTemplate
 from langchain_core.prompts import PromptTemplate
 # from langchain.schema import AgentAction, AgentFinish
-from langchain_core.schema import AgentAction, AgentFinish
+from langchain_core.agents import AgentAction, AgentFinish
 from pydantic import BaseModel, Field
 
 # Free LLM import
