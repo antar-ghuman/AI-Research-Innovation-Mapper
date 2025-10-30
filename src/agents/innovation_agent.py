@@ -13,6 +13,7 @@ import re
 from collections import defaultdict, Counter
 import random
 
+from __future__ import annotations
 # LangChain imports
 from langchain.tools import BaseTool
 from pydantic import BaseModel, Field
